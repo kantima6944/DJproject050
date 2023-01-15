@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="rounded m-3 fs-6" style="background: #f5c2c7">
+        <div class="d-flex pt-3 bd-highlight">
+            <div class="p-2 bg-warning flex-fill text-white" style="background: #0dcaf0 ">
+             <h2><i class="fa-solid fa-user-hair-long"></i>ประวัติส่วนตัว</h2>
+            </div>
+        </div>
+        <div class="m-2 pt-2">
+            <img src="{% static 'images/123.jpg' %}" class="rounded float-end img-thumbnail border border-info" alt="mypic" width="300">
+         <div class="row pt-10">
+          <div class="col-lg-10">
+            <b>
+                - ชื่อ : นางสาวกัณทิมา ยุซิ ชื่อเล่น แนทตี้ อายุ 21 ปี<br>
+                     - เกิดวันที่ : 6 กันยายน 2544<br>
+                     - เชื้อชาติ : ไทย สัญชาติ : ไทย ศาสนา : พุทธ<br>
+                     - ที่อยู่ปัจจุบัน : 92 ม.7 บ้านดู่น้อย ตำบลโนนแดง อำเภอโนนศิลา จังหวัดขอนแก่น 40110<br>
+                     - เบอร์โทร : 0994742410<br>
+                     - อีเมล : kantima.yu@rmuit.ac.th<br>
+                     - สีที่ชอบ : สีชมพู,ฟ้า,แดง <br>
+                     - อาหารที่ชอบ : ส้มตำ,หมูกระทะ,ข้าวผัด<br>
+                     - คติประจำใจ : เรียนไม่เก่งแต่สัญญาว่าจะเรียนให้จบ
+
+            </b>
+          </div>
+
+         </div>
+
+        </div>
+    </div>
+{% endblock %}
