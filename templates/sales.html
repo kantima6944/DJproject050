@@ -1,112 +1,196 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 {% block content %}
-    <div class="rounded m-3 fs-6" style="background: #f5c2c7">
-   <div class="d-flex pt-3 bd-highlight">
-            <div class="p-2 bg-danger flex-fill text-white">
-             <h2><img src="{% static 'images/555.jpg' %}"  width="200" height="200"> </h2>
-                <p class="p-3 bg-secondary" style=""><b> ซันซิลผมสวยมั่นใจอะไรก็เป็นไปได้.   </b>
+    <meta charset="UTF-8">
+    <title>Idol Page</title>
+    <style>
+        body{background-image: url("{%static 'images/P1.jpg'  %}")}
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: coral;
+        }
+
+        .container:hover .overlay {
+            opacity: 10;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="row">
+        <h3 class="text-center display-10" style="background-color: sandybrown"><b><u>We are proudly present our
+            products to our sweet customers :)</u></b></h3><br>
+        <h3 class="text-center"><b>buy me and you will never feel hungry! no more..</b></h3>
+        <br>
+    </div>
+    {#    <h2>We are proudly present our products to our sweet customers :)</h2>#}
+    {#    <p>buy me and you will never feel hungry! no more..</p>#}
+
+    <div class="container">
+        <img src={% static "images/su1.jpg.." %} alt="original" class="image" align="center">
+        <div class="overlay">
+            <div class="text">Sunsilkl<br>
+                >ซันซิลสูตรผมตร <br> รหัสสินค้า 01 75.00 ฿
             </div>
         </div>
-           <div class="row pt-5 mb-3">
-<video > </video>
-        <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 5rem;">
-                <a href="#">
-                    <img src="{% static 'images/su1.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรผมตรง</h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        add to cart
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+    <div class="container">
+        <img src={% static "images/su2.jpg." %} alt="Avatar" class="image" align="center">
+        <div class="overlay">
+            <div class="text">Sunsilke<br>
+                >ซันซิลสูตรผมมีน้ำหนัก 2 ขวด <br>รหัสสินค้า 02 199.00฿
             </div>
         </div>
-           <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 5rem;">
-                <a href="#">
-                    <img src="{% static 'images/su2.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรผมมีน้ำหนัก </h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        add to cart
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+
+     <div class="container">
+        <img src={% static "images/su3.jpg." %} alt="Avatar" class="image" align="center">
+        <div class="overlay">
+            <div class="text">Sunsilka<br>
+               ซันซิลสูตรฟื้นฟูผมมแห้งเสีย <br>รหัสสินค้า 03 75.00฿
             </div>
         </div>
-                <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 13rem;">
-                <a href="#">
-                    <img src="{% static 'images/su3.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรฟื้นฟูผมมแห้งเสีย </h5>
-                    <p class="card-text">75 </p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        add to cart
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+
             </div>
         </div>
-               <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 13rem;">
-                <a href="#">
-                    <img src="{% static 'images/su4.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรปกป้องผมทำสีให้เงางาม</h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+  <div class="container">
+        <img src={% static "images/su4.jpg" %} alt="original" class="image" align="center">
+        <div class="overlay">
+            <div class="text">Sunsilkl<br>
+                >ซันซิลสูตรปกป้องผมทำสีให้เงางาม 2ขวด <br> รหัสสินค้า 04 199.00 ฿
             </div>
         </div>
-               <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 13rem;">
-                <a href="#">
-                    <img src="{% static 'images/su5.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรผมนุ่มลื่นเรียบสวย</h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        add to cart
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+    <div class="container">
+        <img src={% static "images/su5.jpg" %} alt="Avatar" class="image" align="center">
+        <div class="overlay">
+            <div class="text">Sunsilke<br>
+                >ซันซิลสูตรผมนุ่มลื่นเรียบสวย 2 ขวด <br>รหัสสินค้า 05 199.00฿
             </div>
         </div>
-               <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 13rem;">
-                <a href="#">
-                    <img src="{% static 'images/su8.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรผมดำเงางาม</h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        add to cart
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+
+     <div class="container">
+        <img src={% static "images/su6.jpg." %} alt="Avatar" class="image" align="center">
+        <div class="overlay">
+            <div class="text">Sunsilka<br>
+                ซันซิลผมเงางาม<br>รหัสสินค้า05 75฿
             </div>
         </div>
-               <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 13rem;">
-                <a href="#">
-                    <img src="{% static 'images/su6.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรปกป้องเส้นผมจากสภาพอากาศ</h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
+    </div>
+
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+        add to cart
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+
             </div>
         </div>
-               <div class="col-md-3 ">
-            <div class="card h-100 mx-auto cards" style="width: 13rem;">
-                <a href="#">
-                    <img src="{% static 'images/su7.jpg' %}" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body justify-content-start">
-                    <h5 class="card-title">ซันซิลสูตรเสริมความแข็งแรงให้ผมยาว</h5>
-                    <p class="card-text">75</p>
-                    <a href="#" class="btn btn-primary">Buy.</a>
-                </div>
-            </div>
-        </div>
-</div>
-</div>
+    </div>
+
+
 
 {% endblock %}

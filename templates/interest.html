@@ -1,25 +1,38 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
-    <div class="rounded m-3 fs-6" style="background: #f5c2c7">
-   สิ่งที่สนใจ
-    <div class="m-2 pt-2">
-            <img src="{% static 'images/11.jpg.' %}" class="rounded float-end img-thumbnail border border-info" alt="mypic" width="300">
-            <img src="{% static 'images/pt.jpg.' %}" class="rounded float-end img-thumbnail border border-info" alt="mypic" width="300">
-            <img src="{% static 'images/02.jpg.' %}" class="rounded float-end img-thumbnail border border-info" alt="mypic" width="300">
-          <div class="row pt-8">
-          <div class="col-lg-10">
-            <b>
-                   <b>ชอบการเมือง</b> คงมีหลายคนสงสัยและถามว่าทำไมถึงชอบการเมืองเพราะวัยรุ่นส่วนมากจะไม่ค่อยให้ความสนใจการเมืองเท่าไหร่
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title >สิ่งที่สนใจ</title>
+    <style>
+        body{background-image: url("{%static 'images/P1.jpg'  %}")}
+    </style>
+
+</head>
+{#     <style>#}
+{#body {background-image: url('{%static 'images/bg02.png'  %}');}#}
+{#</style>#}
+
+</head><br>
+<body >
+<div><strong><font style="font-family: 'TH KoHo';caret-color: #51585e;background-color: white;border-style: double;border-color: #eccccf;border-width: 3px;" size="28">นักการเมือง</font> </strong></div>
+<br>
+<table align="center" style="border-style: solid;border-color: #51585e;border-width: 5px;background-color: white" >
+        <tr>
+            <td><img src="{% static 'images/11.jpg.' %}"width="320px"height="180px"></td>
+            <td><img src="{% static 'images/pt.jpg' %}"width="320px"height="180px"></td>
+            <td><img src="{% static 'images/02.jpg' %}"width="320px"height="180px"></td>
+
+        </tr>
+    </table><br><br>
+    <div align="center"><strong><font style="font-family: 'TH Sarabun New';font-size: 22px;color: black;background-color: #f2e7c3;border-color: #51585e;">
+                เป็นนักการเมือง คงมีหลายคนสงสัยและถามว่าทำไมถึงชอบการเมืองเพราะวัยรุ่นส่วนมากจะไม่ค่อยให้ความสนใจการเมืองเท่าไหร่
                 จริงๆแล้วการเมืองเป็นสิ่งที่ใกล้ตัวเรามากๆ มันเป็นสิ่งที่ทำให้เราได้รู้ว่าขณะนี้บ้านเมืองของเราเป็นยังไง เศรษฐกิจตอนนี้เป็นยังไงบ้างอีกอย่าง
                 ตัวเราเองชื่นชอบนักการเมืองหลายท่านมากๆยิ่งทำให้เรามาสนใจการเมืองมากขึ้นไปอีก ชอบนักการเมืองของพรรคเพื่อไทยมากๆ มากจนรู้ว่า
                 เวลาเขามีงานปราศัยที่ไหนก็จะตามไปให้กำลังใจมีรูปมาโชว์ด้วยนะคะ คิดว่าในอนาคตพรรคเพื่อไทยจะสามารถนำประเทศของเราดีขึ้นกว่านี้
+    </font></strong></div><br>
+ </button></div><br>
 
-            </b>
-          </div>
-
-         </div>
-
-        </div>
-    </div>
+</div>
+</body>
 {% endblock %}

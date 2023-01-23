@@ -1,20 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="rounded m-3  text-white" style="height: 100%;">
-<div id="Interval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Interval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Interval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Interval" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+<head>
+    <link type="text/css " rel="stylesheet" href="{% static 'stylesheets/bt523/css/bootstrap.css' %}">
+    <link type="text/css " rel="stylesheet" href="{% static 'fontawesome5/css/all.css' %}">
+    <script src='{%static 'stylesheets/bt523/js/bootstrap.js' %}'></script>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<div class="row">
+    <div class="text-dark" style="background-color: #9ec5fe ">
+
+        <div class="row">
+            <h1 class="text-center display-1" style="background-color: plum" ><b>Welcome </b></h1>
+            <p class="text-dark text-center" style="background-color: plum">
+                <marquee direction="left">ยินดีต้อนรับสู่เว็บไซต์ของกัณทิมา</marquee>
+            </p>
+        </div>
+ <br>
+
+        <img src="{%static "images/H.png"%}" width="1300" height="500"class="mx-auto d-block img-fluid">
+        <br><br><br>
 
 
-<h1> Welcome My web page's .</h1>
+    </div>
+
 </div>
-<p class="p-3 bg-secondary" style=""><b> ยินดีต้อนรับเพจของเรานะคะ   </b>
 
-
-</p>
-</div>
+</body>
 {% endblock %}

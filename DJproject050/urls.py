@@ -27,6 +27,10 @@ urlpatterns = [
     path('sales',views.sales,name='sales'),
     path('rloe', views.rloe, name='rloe'),
     path('etc', views.etc, name='etc'),
+    path('showMyData', views.showMyData, name='showMyData'),
+
+
+
 
 
 ]
