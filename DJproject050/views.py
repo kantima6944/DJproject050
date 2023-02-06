@@ -40,7 +40,7 @@ def mydata(request):
 
 lstOurProduct = []
 def listProduct(request):
-    details = "ยาสระผม"
+    details = "โทรศัพท์มือถือ"
     name = "นางสาวกัณทิมา ยุซิ"
     date = datetime.datetime.now()
     return render(request, 'listProduct.html', {'lstProduct': lstOurProduct,
