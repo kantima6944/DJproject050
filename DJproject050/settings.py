@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'profileApp.apps.ProfileappConfig',
-    'fontawesome_5',
+    'ProfileApp.apps.ProfileappConfig',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'djangoPJ650.urls'
+ROOT_URLCONF = 'DJproject050.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangoPJ650.wsgi.application'
+WSGI_APPLICATION = 'DJproject050.wsgi.application'
 
 
 # Database

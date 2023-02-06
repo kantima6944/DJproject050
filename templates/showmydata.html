@@ -3,12 +3,12 @@
 {% block content %}
     <head>
         <style>
-            #pic { width: 200px; }
+            #pic { width: 100px; }
             th {text-align: center;}
             td {text-align: center;
                 vertical-align: middle;
-                font-size: 18px;}
-            p{font-size: 18px}
+                font-size: 16px;}
+            p{font-size: 16px}
         </style>
     </head>
    <div class="rounded m-3 fs-6" style="background: #f5c2c7; height: 100%">
@@ -24,12 +24,14 @@
             <p>น้ำหนัก: {{ weigth }}</p>
             <p>สี: {{ colors }}</p>
             <p>อาชีพ: {{ job }}</p></b>
+
         </div>
         <div class="col-6">
            <b><p>ชื่อ: {{ name }}</p>
             <p>เพศ: {{ gender }}</p>
             <p>ส่วนสูง: {{ heigth }}</p>
                <p>อาหารที่ชอบ: {{ food }}</p></b>
+
         </div>
     </div>
     <div>
@@ -43,7 +45,7 @@
         <tr>
             <td>{{ listproduct.0 }}</td>
             <td>{{ listproduct.1 }}</td>
-            <td><img src="{% static listproduct.2 %}" width="100" alt="pic" id="pic"></td>
+            <td><img src="{% static listproduct.2 %}" width="75" alt="pic" id="pic"></td>
         </tr>
         {% endfor %}
            </table>

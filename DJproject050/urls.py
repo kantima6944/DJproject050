@@ -28,6 +28,8 @@ urlpatterns = [
     path('rloe', views.rloe, name='rloe'),
     path('etc', views.etc, name='etc'),
     path('showmydata', views.mydata, name='showmydata'),
+    path('listProduct', views.listProduct, name = 'listProduct'),
+    path('inputProduct', views.inputProduct, name= 'inputProduct')
 
 
 
